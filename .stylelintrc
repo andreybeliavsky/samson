@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "stylelint-config-airbnb",
+    "stylelint-config-idiomatic-order"
+  ],
+  "plugins": [
+    "stylelint-order",
+    "stylelint-scss"
+  ],
+  "rules": {
+    "max-nesting-depth": 3,
+    "at-rule-empty-line-before": null,
+    "linebreaks": "windows"
+  }
+}

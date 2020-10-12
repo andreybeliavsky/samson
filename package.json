@@ -1,0 +1,49 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "app/**/*.scss": [
+      "stylelint --fix"
+    ]
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp prod --production",
+    "stylelint": "stylelint \"app/**/*.scss\" --syntax=scss",
+    "stylelint:fix": "stylelint \"app/**/*.scss\" --syntax=scss --fix",
+    "eslint": "eslint ./app/js/index.js",
+    "eslint:fix": "eslint ./app/js/index.js --fix"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-if": "^3.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
+    "stylelint": "^12.0.0",
+    "stylelint-config-airbnb": "^0.0.0",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-order": "^3.1.1",
+    "stylelint-scss": "^3.18.0",
+    "yargs": "^15.0.2"
+  },
+  "dependencies": {
+    "swiper": "^6.3.2"
+  },
+  "author": "Andrey Beliavsky <andreybeliavsky@gmail.com>"
+}
