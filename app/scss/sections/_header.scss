@@ -1,0 +1,28 @@
+.header {
+  background: url("../img/header-bg.png");
+  background-size: cover;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 0;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: #f2f2f2;
+    font-size: 40px;
+    font-weight: $bold-weight;
+    line-height: 35px;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+    color: #a7a7a7;
+    font-size: 32px;
+    font-weight: $bold-weight;
+    line-height: 35px;
+  }
+}

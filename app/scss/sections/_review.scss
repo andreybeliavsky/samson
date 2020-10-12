@@ -1,0 +1,29 @@
+.review {
+  background: #f7f7f7;
+
+  &__inner {
+    padding: 60px 0;
+  }
+
+  &__text {
+    width: 70%;
+    padding-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #a0a0a0;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    @extend %relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      color: #dcdcdc;
+      content: "”";
+      font-size: 100px;
+      transform: translateX(-50%);
+    }
+  }
+}
