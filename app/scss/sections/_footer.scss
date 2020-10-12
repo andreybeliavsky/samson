@@ -11,9 +11,12 @@
   }
 
   &__list-item {
-    width: calc(25% - 30px);
     margin-right: 15px;
     margin-left: 15px;
+
+    @include sm-block() {
+      width: calc(25% - 30px);
+    }
   }
 
   &__copyright {

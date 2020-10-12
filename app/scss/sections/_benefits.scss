@@ -10,7 +10,9 @@
   }
 
   &__list-item {
-    width: 25%;
+    @include sm-block() {
+      width: 25%;
+    }
   }
 }
 
