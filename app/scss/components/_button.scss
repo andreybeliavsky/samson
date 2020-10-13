@@ -1,11 +1,25 @@
 .button {
   padding: 16px 26px;
   border: 0;
-  background-color: #3f8dbf;
+  background: #3f8dbf;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 #3678a3;
   color: $white-color;
   cursor: pointer;
+  font-family: $font-1;
   font-size: 14px;
   font-weight: $bold-weight;
   line-height: 1;
   text-transform: uppercase;
+  transition: transform .3s, box-shadow .3s;
+  @extend %relative;
+
+  &:hover {
+    box-shadow: none;
+    transform: translateY(3px);
+  }
+
+  &:active {
+    background: darken(#3f8dbf, 10%);
+  }
 }

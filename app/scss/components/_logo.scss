@@ -1,6 +1,13 @@
 .logo {
-  color: #4d4d4d;
-  font-size: 40px;
+  display: inline-block;
+  color: $title-color;
+  font-family: $font-1;
+  font-size: 32px;
   font-weight: $bold-weight;
+  line-height: 1;
   text-transform: uppercase;
+
+  @include sm-block() {
+    font-size: 40px;
+  }
 }

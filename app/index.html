@@ -4,25 +4,25 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="body">
 <div class="wrapper">
   <div class="header-top">
     <div class="container">
       <div class="header-top__inner">
-        <div class="logo header-top__logo">Marble</div>
-        <a class="burger-button" href="#">
-          <span class="burger-button_line"></span>
-        </a>
-        <ul class="menu header-top__menu">
-          <li class="menu__item"><a class="menu__item-link menu__item-link--active" href="#">Home</a></li>
-          <li class="menu__item"><a class="menu__item-link" href="#">About</a></li>
-          <li class="menu__item"><a class="menu__item-link" href="#">Journal</a></li>
-          <li class="menu__item"><a class="menu__item-link" href="#">Service</a></li>
-          <li class="menu__item"><a class="menu__item-link" href="#">Features</a></li>
-          <li class="menu__item"><a class="menu__item-link" href="#">Contact</a></li>
-        </ul>
+        <a class="logo header-top__logo" href="#">Marble</a>
+        <div class="menu header-top__menu">
+          <button class="menu__button"><span class="menu__button-line"></span></button>
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__item-link menu__item-link--active" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#benefits">About</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#works">Journal</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#works">Service</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#review">Features</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#footer">Contact</a></li>
+          </ul>
       </div>
     </div>
   </div>
@@ -35,7 +35,7 @@
       </div>
     </div>
   </header>
-  <section class="benefits">
+  <section class="benefits" id="benefits">
     <div class="container">
       <div class="benefits__inner">
         <div class="benefits__list">
@@ -71,13 +71,13 @@
       </div>
     </div>
   </section>
-  <section class="works">
+  <section class="works" id="works">
     <div class="container">
       <div class="title works__title">Our Latest Works</div>
       <div class="works__list">
         <div class="works-item works__list-item">
           <div class="works-item__image"><img src="img/works-01.png" alt=""></div>
-          <div class="works-item__title">Nobis Business Card</div>
+          <a class="works-item__title" href="#">Nobis Business Card</a>
           <div class="works-item__subtitle">Business Card, Graphic</div>
           <div class="works-item__text">
             Sed posuere consectetur est at lobortis. Porta sagittis lacus vel augue laoreet rutrum.
@@ -85,7 +85,7 @@
         </div>
         <div class="works-item works__list-item">
           <div class="works-item__image"><img src="img/works-02.png" alt=""></div>
-          <div class="works-item__title">Nobis Business Card</div>
+          <a class="works-item__title" href="#">Nobis Business Card</a>
           <div class="works-item__subtitle">Business Card, Graphic</div>
           <div class="works-item__text">
             Sed posuere consectetur est at lobortis. Porta sagittis lacus vel augue laoreet rutrum.
@@ -93,7 +93,7 @@
         </div>
         <div class="works-item works__list-item">
           <div class="works-item__image"><img src="img/works-03.png" alt=""></div>
-          <div class="works-item__title">Nobis Business Card</div>
+          <a class="works-item__title" href="#">Nobis Business Card</a>
           <div class="works-item__subtitle">Business Card, Graphic</div>
           <div class="works-item__text">
             Sed posuere consectetur est at lobortis. Porta sagittis lacus vel augue laoreet rutrum.
@@ -102,7 +102,7 @@
       </div>
     </div>
   </section>
-  <section class="review">
+  <section class="review" id="review">
     <div class="container">
       <div class="review__inner">
         <div class="review__text">
@@ -112,7 +112,7 @@
       </div>
     </div>
   </section>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="container">
       <div class="footer__list">
         <div class="footer-item footer__list-item">
@@ -120,9 +120,17 @@
           <div class="footer-item__text">
             Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna.
           </div>
-          <a class="link link--geo" href="#">Moonshine Street No: 14/05 Light City, Jupiter</a>
-          <a class="link link--tel" href="#">0247 541 65 87</a>
-          <a class="link link--mail" href="#">support@longwave.com</a>
+          <ul class="footer-contacts">
+            <li class="footer-contacts__item">
+              <a class="link link--geo" href="#">Moonshine Street No: 14/05 Light City, Jupiter</a>
+            </li>
+            <li class="footer-contacts__item">
+              <a class="link link--tel" href="#">0247 541 65 87</a>
+            </li>
+            <li class="footer-contacts__item">
+              <a class="link link--mail" href="#">support@longwave.com</a>
+            </li>
+          </ul>
         </div>
         <div class="footer-item footer__list-item">
           <div class="footer-item__title">Twitter</div>
@@ -139,7 +147,7 @@
             </div>
             <div class="footer-item__list-item">
               <a class="link link--twitter" href="#">
-                Vestibulum id ligula porta  euismod semper. Maecenas faucibus mollis.
+                Vestibulum id ligula porta euismod semper. Maecenas faucibus mollis.
               </a>
             </div>
           </div>
@@ -147,31 +155,27 @@
         <div class="footer-item footer__list-item">
           <div class="footer-item__title">Popular Posts</div>
           <div class="footer-item__list">
-            <div class="post footer-item__list-item">
-              <a class="post__name" href="#">Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.</a>
-              <div class="post__date">14 Nov, 2012</div>
+            <div class="footer-post footer-item__list-item">
+              <a class="footer-post__name" href="#">Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.</a>
+              <div class="footer-post__date">14 Nov, 2012</div>
             </div>
-            <div class="post footer-item__list-item">
-              <a class="post__name" href="#">Scelerisque nisl consectetur et.</a>
-              <div class="post__date">14 Nov, 2012</div>
+            <div class="footer-post footer-item__list-item">
+              <a class="footer-post__name" href="#">Scelerisque nisl consectetur et.</a>
+              <div class="footer-post__date">14 Nov, 2012</div>
             </div>
-            <div class="post footer-item__list-item">
-              <a class="post__name" href="#">Pellentesque ornare sem lacinia quam venenatis vestibulum.</a>
-              <div class="post__date">14 Nov, 2012</div>
+            <div class="footer-post footer-item__list-item">
+              <a class="footer-post__name" href="#">Pellentesque ornare sem lacinia quam venenatis vestibulum.</a>
+              <div class="footer-post__date">14 Nov, 2012</div>
             </div>
           </div>
         </div>
         <div class="footer-item footer__list-item">
           <div class="footer-item__title">About Us</div>
           <div class="footer-item__text">
-            <p>
-              Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor
-              ligula, eget lacinia odio sem nec elit.
-            </p>
-            <p>
-              Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus curabitur blandit
-              tempus.
-            </p>
+            <p>Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor
+              ligula, eget lacinia odio sem nec elit.</p>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus curabitur blandit
+              tempus.</p>
           </div>
         </div>
       </div>
@@ -179,6 +183,6 @@
     </div>
   </footer>
 </div>
-
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,28 +1,136 @@
 .menu {
-  display: flex;
-  align-items: center;
+
+  &__button {
+    position: absolute;
+    z-index: 5;
+    top: 24px;
+    right: 20px;
+    display: block;
+    width: 40px;
+    height: 25px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    appearance: none;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 0;
+    transition: background .3s;
+
+    @include sm-block() {
+      display: none;
+    }
+
+    &--active {
+      position: fixed;
+    }
+  }
+
+  &__button--active &__button-line {
+    background: none;
+  }
+
+  &__button--active &__button-line::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  &__button--active &__button-line::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+
+  &__button-line {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 0;
+    display: block;
+    height: 5px;
+    background: #4d4d4d;
+
+    &::before,
+    &::after {
+      position: absolute;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 5px;
+      background: #4d4d4d;
+      content: "";
+    }
+
+    &::before {
+      top: -10px;
+      transition: top .3s, transform .3s;
+    }
+
+    &::after {
+      bottom: -10px;
+      transition: bottom .3s, transform .3s;
+    }
+  }
+
+  &__list {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    background: rgba($black-color, .95);
+
+    @include sm-block() {
+      position: relative;
+      display: flex;
+      background: transparent;
+    }
+
+    &--open {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
 
   &__item {
-    margin-right: 10px;
+    margin-bottom: 10px;
+
+    @include sm-block() {
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+
+    @include md-block() {
+      margin-right: 20px;
+    }
 
     &:last-child {
       margin-right: 0;
+      margin-bottom: 0;
     }
   }
 
   &__item-link {
     color: #4d4d4d;
-    font-size: 16px;
+    font-family: $font-1;
+    font-size: 24px;
     font-weight: $bold-weight;
     line-height: 35px;
     text-transform: uppercase;
+    transition: color .3s;
 
-    &--active {
-      color: #19ba9b;
+    @include sm-block() {
+      font-size: 16px;
     }
-    
+
+    &--active,
     &:hover {
-      color: #19ba9b;
+      color: $brand-color;
     }
   }
 }
