@@ -37,6 +37,7 @@
     display: inline-block;
     margin-bottom: 10px;
     color: #4d4d4d;
+    font-family: $font-2;
     font-size: 18px;
     font-weight: $bold-weight;
     transition: color .3s;
@@ -49,6 +50,7 @@
   &__subtitle {
     margin-bottom: 20px;
     color: #a7a7a7;
+    font-family: $font-2;
     font-size: 13px;
   }
 

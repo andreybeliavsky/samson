@@ -11,6 +11,7 @@
     margin-right: auto;
     margin-left: auto;
     color: #a0a0a0;
+    font-family: $font-2;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
@@ -22,6 +23,7 @@
       left: 50%;
       color: #dcdcdc;
       content: "”";
+      font-family: Arial;
       font-size: 100px;
       transform: translateX(-50%);
     }

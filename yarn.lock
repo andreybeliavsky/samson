@@ -3418,6 +3418,11 @@ fsevents@^1.2.7:
     bindings "^1.5.0"
     nan "^2.12.1"
 
+fslightbox@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/fslightbox/-/fslightbox-3.2.1.tgz#6f8f8d5ed830e5d21377e958222077785d3d187d"
+  integrity sha512-mF42gfl9uc6KE+gA6eXmRT4Xfo/3jS5x0I856L/nBjjwtqWyI1kfoiwzGGPEgDn1IxRk+bGQjdjYBU1iO6xCLQ==
+
 fstream@^1.0.0, fstream@^1.0.12:
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/fstream/-/fstream-1.0.12.tgz#4e8ba8ee2d48be4f7d0de505455548eae5932045"

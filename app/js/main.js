@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', () => {
     if (window.innerWidth > 767) {
       navMenu.classList.remove('menu__list--open');
+      navButton.classList.remove('menu__button--active');
     }
   });
 });

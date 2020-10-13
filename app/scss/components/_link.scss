@@ -4,11 +4,15 @@
   color: #c9c9c9;
   font-size: 14px;
   line-height: 24px;
+  transition: color .3s;
   @extend %relative;
+
+  &:hover {
+    color: $brand-color;
+  }
 
   &::before {
     position: absolute;
-
     left: 0;
     content: "";
   }

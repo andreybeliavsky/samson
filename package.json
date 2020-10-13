@@ -27,6 +27,7 @@
     "eslint": "^7.10.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.1",
+    "fslightbox": "^3.2.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-group-css-media-queries": "^1.2.2",
