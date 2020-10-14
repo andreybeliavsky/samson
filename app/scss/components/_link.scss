@@ -14,6 +14,7 @@
   &::before {
     position: absolute;
     left: 0;
+    background-image: url("../img/icons/sprite.png");
     content: "";
   }
 
@@ -21,27 +22,27 @@
     top: 4px;
     width: 9px;
     height: 13px;
-    background-image: url("../img/icons/geo.png");
+    background-position: -28px -57px;
   }
 
   &--tel::before {
     top: 4px;
     width: 10px;
     height: 11px;
-    background-image: url("../img/icons/tel.png");
+    background-position: -27px -89px;
   }
 
   &--mail::before {
     top: 8px;
     width: 12px;
     height: 8px;
-    background-image: url("../img/icons/mail.png");
+    background-position: -13px -130px;
   }
 
   &--twitter::before {
     top: 4px;
     width: 13px;
     height: 10px;
-    background-image: url("../img/icons/twitter.png");
+    background-position: -0px -130px;
   }
 }

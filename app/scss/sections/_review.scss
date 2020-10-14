@@ -3,6 +3,10 @@
 
   &__inner {
     padding: 60px 0;
+
+    @include md-block() {
+      padding: 70px 0;
+    }
   }
 
   &__text {
@@ -23,7 +27,7 @@
       left: 50%;
       color: #dcdcdc;
       content: "”";
-      font-family: Arial;
+      font-family: "Arial";
       font-size: 100px;
       transform: translateX(-50%);
     }

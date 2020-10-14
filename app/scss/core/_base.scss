@@ -1,9 +1,13 @@
 @include reset();
 
 .body {
-  background: $black-color;
+  background: $white-color;
   color: $white-color;
   font-family: $font-3;
+
+  @media screen and (max-width: 991px) {
+    margin-right: 0!important;
+  }
 }
 
 .wrapper {

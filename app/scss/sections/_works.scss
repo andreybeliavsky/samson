@@ -31,19 +31,51 @@
 
   &__image {
     margin-bottom: 10px;
+    @extend %relative;
+    @extend %hidden;
+  }
+
+  &__image:hover &__image-overlay {
+    top: 0;
+  }
+
+  &__image-overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgba($black-color, .9);
+    content: "";
+    transition: top .5s;
+  }
+
+  &__image-icon {
+    width: 40px;
+    height: 40px;
+    background: url("../img/icons/loupe.svg");
+  }
+
+  &__image-pic {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   &__title {
     display: inline-block;
     margin-bottom: 10px;
-    color: #4d4d4d;
+    color: $title-color;
     font-family: $font-2;
     font-size: 18px;
     font-weight: $bold-weight;
     transition: color .3s;
 
     &:hover {
-      color: #19ba9b;
+      color: $brand-color;
     }
   }
 

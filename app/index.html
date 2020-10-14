@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Marble</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="body">
 <div class="wrapper">
-  <div class="header-top">
+  <header class="header-top">
     <div class="container">
       <div class="header-top__inner">
         <a class="logo header-top__logo" href="#">Marble</a>
         <div class="menu header-top__menu">
           <button class="menu__button"><span class="menu__button-line"></span></button>
           <ul class="menu__list">
-            <li class="menu__item"><a class="menu__item-link menu__item-link--active" href="#">Home</a></li>
-            <li class="menu__item"><a class="menu__item-link" href="#benefits">About</a></li>
-            <li class="menu__item"><a class="menu__item-link" href="#works">Journal</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#header">About</a></li>
+            <li class="menu__item"><a class="menu__item-link" href="#benefits">Journal</a></li>
             <li class="menu__item"><a class="menu__item-link" href="#works">Service</a></li>
             <li class="menu__item"><a class="menu__item-link" href="#review">Features</a></li>
             <li class="menu__item"><a class="menu__item-link" href="#footer">Contact</a></li>
           </ul>
+        </div>
       </div>
     </div>
-  </div>
-  <header class="header">
+  </header>
+  <section class="header" id="header">
     <div class="container">
       <div class="header__inner">
         <div class="header__title">We are a digital & branding agency based in London.</div>
@@ -34,34 +36,42 @@
         <button class="button header__button">see Portfolio</button>
       </div>
     </div>
-  </header>
+  </section>
   <section class="benefits" id="benefits">
     <div class="container">
       <div class="benefits__inner">
         <div class="benefits__list">
           <div class="benefits-item benefits__list-item">
-            <div class="benefits-item__image benefits-item__image--idea"></div>
+            <div class="benefits-item__image benefits-item__image--idea">
+              <div class="benefits-item__icon"></div>
+            </div>
             <div class="benefits-item__name">Pellentesque</div>
             <div class="benefits-item__text">
               Nulla vitae libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit dapibus.
             </div>
           </div>
           <div class="benefits-item benefits__list-item">
-            <div class="benefits-item__image benefits-item__image--time"></div>
+            <div class="benefits-item__image benefits-item__image--time">
+              <div class="benefits-item__icon"></div>
+            </div>
             <div class="benefits-item__name">Consectetur</div>
             <div class="benefits-item__text">
               Vestibulum id ligula porta euismod semper. Aenean lacinia bibendum nulla sed consectetur dui.
             </div>
           </div>
           <div class="benefits-item benefits__list-item">
-            <div class="benefits-item__image benefits-item__image--composition"></div>
+            <div class="benefits-item__image benefits-item__image--composition">
+              <div class="benefits-item__icon"></div>
+            </div>
             <div class="benefits-item__name">Tristiquet</div>
             <div class="benefits-item__text">
               Fusce dapibus, cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo risus.
             </div>
           </div>
           <div class="benefits-item benefits__list-item">
-            <div class="benefits-item__image benefits-item__image--money"></div>
+            <div class="benefits-item__image benefits-item__image--money">
+              <div class="benefits-item__icon"></div>
+            </div>
             <div class="benefits-item__name">Fermentum</div>
             <div class="benefits-item__text">
               Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum sagittis lacus mollis.
@@ -76,7 +86,14 @@
       <div class="title works__title">Our Latest Works</div>
       <div class="works__list">
         <div class="works-item works__list-item">
-          <div class="works-item__image"><img src="img/works-01.png" alt=""></div>
+          <div class="works-item__image">
+            <a href="img/works-01.jpg" data-fslightbox>
+              <span class="works-item__image-overlay">
+                <span class="works-item__image-icon"></span>
+              </span>
+              <img class="works-item__image-pic" src="img/works-01.jpg" alt="work1">
+            </a>
+          </div>
           <a class="works-item__title" href="#">Nobis Business Card</a>
           <div class="works-item__subtitle">Business Card, Graphic</div>
           <div class="works-item__text">
@@ -84,7 +101,14 @@
           </div>
         </div>
         <div class="works-item works__list-item">
-          <div class="works-item__image"><img src="img/works-02.png" alt=""></div>
+          <div class="works-item__image">
+            <a href="img/works-02.jpg" data-fslightbox>
+              <span class="works-item__image-overlay">
+                <span class="works-item__image-icon"></span>
+              </span>
+              <img class="works-item__image-pic" src="img/works-02.jpg" alt="work2">
+            </a>
+          </div>
           <a class="works-item__title" href="#">Nobis Business Card</a>
           <div class="works-item__subtitle">Business Card, Graphic</div>
           <div class="works-item__text">
@@ -92,7 +116,14 @@
           </div>
         </div>
         <div class="works-item works__list-item">
-          <div class="works-item__image"><img src="img/works-03.png" alt=""></div>
+          <div class="works-item__image">
+            <a href="img/works-03.jpg" data-fslightbox>
+             <span class="works-item__image-overlay">
+                <span class="works-item__image-icon"></span>
+              </span>
+              <img class="works-item__image-pic" src="img/works-03.jpg" alt="work3">
+            </a>
+          </div>
           <a class="works-item__title" href="#">Nobis Business Card</a>
           <div class="works-item__subtitle">Business Card, Graphic</div>
           <div class="works-item__text">
@@ -114,81 +145,84 @@
   </section>
   <footer class="footer" id="footer">
     <div class="container">
-      <div class="footer__list">
-        <div class="footer-item footer__list-item">
-          <div class="footer-item__title">Get In Touch</div>
-          <div class="footer-item__text">
-            Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna.
+      <div class="footer__inner">
+        <div class="footer__list">
+          <div class="footer-item footer__list-item">
+            <div class="footer-item__title">Get In Touch</div>
+            <div class="footer-item__text">
+              Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna.
+            </div>
+            <ul class="footer-contacts">
+              <li class="footer-contacts__item">
+                <a class="link link--geo" href="#">Moonshine Street No: 14/05 Light City, Jupiter</a>
+              </li>
+              <li class="footer-contacts__item">
+                <a class="link link--tel" href="tel:+02475416587">0247 541 65 87</a>
+              </li>
+              <li class="footer-contacts__item">
+                <a class="link link--mail" href="mailto:support@longwave.com">support@longwave.com</a>
+              </li>
+            </ul>
           </div>
-          <ul class="footer-contacts">
-            <li class="footer-contacts__item">
-              <a class="link link--geo" href="#">Moonshine Street No: 14/05 Light City, Jupiter</a>
-            </li>
-            <li class="footer-contacts__item">
-              <a class="link link--tel" href="tel:+02475416587">0247 541 65 87</a>
-            </li>
-            <li class="footer-contacts__item">
-              <a class="link link--mail" href="mailto:support@longwave.com">support@longwave.com</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-item footer__list-item">
-          <div class="footer-item__title">Twitter</div>
-          <div class="footer-item__list">
-            <div class="footer-item__list-item">
-              <a class="link link--twitter" href="#">
-                Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.
-              </a>
-            </div>
-            <div class="footer-item__list-item">
-              <a class="link link--twitter" href="#">
-                Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.
-              </a>
-            </div>
-            <div class="footer-item__list-item">
-              <a class="link link--twitter" href="#">
-                Vestibulum id ligula porta euismod semper. Maecenas faucibus mollis.
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-item footer__list-item">
-          <div class="footer-item__title">Popular Posts</div>
-          <div class="footer-item__list">
-            <div class="footer-post footer-item__list-item">
-              <a class="footer-post__name" href="#" target="_blank">
-                Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.
-              </a>
-              <div class="footer-post__date">14 Nov, 2012</div>
-            </div>
-            <div class="footer-post footer-item__list-item">
-              <a class="footer-post__name" href="#" target="_blank">
-                Scelerisque nisl consectetur et.
-              </a>
-              <div class="footer-post__date">14 Nov, 2012</div>
-            </div>
-            <div class="footer-post footer-item__list-item">
-              <a class="footer-post__name" href="#" target="_blank">
-                Pellentesque ornare sem lacinia quam venenatis vestibulum.
-              </a>
-              <div class="footer-post__date">14 Nov, 2012</div>
+          <div class="footer-item footer__list-item">
+            <div class="footer-item__title">Twitter</div>
+            <div class="footer-item__list">
+              <div class="footer-item__list-item">
+                <a class="link link--twitter" href="#">
+                  Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.
+                </a>
+              </div>
+              <div class="footer-item__list-item">
+                <a class="link link--twitter" href="#">
+                  Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.
+                </a>
+              </div>
+              <div class="footer-item__list-item">
+                <a class="link link--twitter" href="#">
+                  Vestibulum id ligula porta euismod semper. Maecenas faucibus mollis.
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="footer-item footer__list-item">
-          <div class="footer-item__title">About Us</div>
-          <div class="footer-item__text">
-            <p>Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor
-              ligula, eget lacinia odio sem nec elit.</p>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus curabitur blandit
-              tempus.</p>
+          <div class="footer-item footer__list-item">
+            <div class="footer-item__title">Popular Posts</div>
+            <div class="footer-item__list">
+              <div class="footer-post footer-item__list-item">
+                <a class="footer-post__name" href="#" target="_blank">
+                  Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.
+                </a>
+                <div class="footer-post__date">14 Nov, 2012</div>
+              </div>
+              <div class="footer-post footer-item__list-item">
+                <a class="footer-post__name" href="#" target="_blank">
+                  Scelerisque nisl consectetur et.
+                </a>
+                <div class="footer-post__date">14 Nov, 2012</div>
+              </div>
+              <div class="footer-post footer-item__list-item">
+                <a class="footer-post__name" href="#" target="_blank">
+                  Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                </a>
+                <div class="footer-post__date">14 Nov, 2012</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-item footer__list-item">
+            <div class="footer-item__title">About Us</div>
+            <div class="footer-item__text">
+              <p>Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat
+                porttitor ligula, eget lacinia odio sem nec elit.</p>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus curabitur blandit
+                tempus.</p>
+            </div>
           </div>
         </div>
+        <div class="footer__copyright">© 2013 Marble. All rights reserved. Theme by elemis.</div>
       </div>
-      <div class="footer__copyright">2013 Marble. All rights reserved. Theme by elemis.</div>
     </div>
   </footer>
 </div>
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
+<script src="js/fslightbox.js"></script>
 </body>
 </html>

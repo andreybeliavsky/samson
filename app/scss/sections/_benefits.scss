@@ -46,42 +46,62 @@
   text-align: center;
 
   &__image {
-    display: inline-block;
+    display: inline-flex;
     width: 90px;
     height: 90px;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
-    background-position: center;
-    background-repeat: no-repeat;
     border-radius: 50%;
 
     &--idea {
       background-color: #9d9abf;
-      background-image: url("../img/icons/idea.png");
-      background-size: 27px 41px;
     }
 
     &--time {
       background-color: #d2514b;
-      background-image: url("../img/icons/time.png");
-      background-size: 28px 32px;
     }
 
     &--composition {
       background-color: #66a3c6;
-      background-image: url("../img/icons/composition.png");
-      background-size: 36px 37px;
     }
 
     &--money {
       background-color: #e8c04f;
-      background-image: url("../img/icons/money.png");
-      background-size: 37px 20px;
     }
+  }
+
+  &__icon {
+    background-image: url("../img/icons/sprite.png");
+  }
+
+  &__image--idea &__icon {
+    width: 27px;
+    height: 41px;
+    background-position: -0px -89px;
+  }
+
+  &__image--time &__icon {
+    width: 28px;
+    height: 32px;
+    background-position: -0px -57px;
+  }
+
+  &__image--composition &__icon {
+    width: 36px;
+    height: 37px;
+    background-position: -0px -20px;
+  }
+
+  &__image--money &__icon {
+    width: 37px;
+    height: 20px;
+    background-position: -0px -0px;
   }
 
   &__name {
     margin-bottom: 10px;
-    color: #4d4d4d;
+    color: $title-color;
     font-family: $font-2;
     font-size: 18px;
     font-weight: $bold-weight;
