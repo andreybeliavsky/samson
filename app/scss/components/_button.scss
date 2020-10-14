@@ -15,7 +15,7 @@
   @extend %relative;
 
   &:hover {
-    box-shadow: none;
+    box-shadow: 0 1px 0 #3678a3;
     transform: translateY(3px);
   }
 

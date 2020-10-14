@@ -34,11 +34,13 @@
 
   &__button--active &__button-line::before {
     top: 0;
+    background: $brand-color;
     transform: rotate(45deg);
   }
 
   &__button--active &__button-line::after {
     bottom: 0;
+    background: $brand-color;
     transform: rotate(-45deg);
   }
 
@@ -116,7 +118,7 @@
   }
 
   &__item-link {
-    color: #4d4d4d;
+    color: $brand-color;
     font-family: $font-1;
     font-size: 24px;
     font-weight: $bold-weight;
@@ -125,6 +127,7 @@
     transition: color .3s;
 
     @include sm-block() {
+      color: $title-color;
       font-size: 16px;
     }
 
