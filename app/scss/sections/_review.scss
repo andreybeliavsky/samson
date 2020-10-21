@@ -10,6 +10,7 @@
   }
 
   &__text {
+    position: relative;
     width: 70%;
     padding-top: 20px;
     margin-right: auto;
@@ -19,7 +20,6 @@
     font-size: 20px;
     line-height: 30px;
     text-align: center;
-    @extend %relative;
 
     &::before {
       position: absolute;

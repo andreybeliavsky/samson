@@ -1,4 +1,5 @@
 .button {
+  position: relative;
   padding: 16px 26px;
   border: 0;
   background: #3f8dbf;
@@ -12,7 +13,6 @@
   line-height: 1;
   text-transform: uppercase;
   transition: transform .3s, box-shadow .3s;
-  @extend %relative;
 
   &:hover {
     box-shadow: 0 1px 0 #3678a3;

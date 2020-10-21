@@ -30,9 +30,9 @@
 .works-item {
 
   &__image {
+    position: relative;
+    overflow: hidden;
     margin-bottom: 10px;
-    @extend %relative;
-    @extend %hidden;
   }
 
   &__image:hover &__image-overlay {
@@ -79,7 +79,7 @@
     }
   }
 
-  &__subtitle {
+  &__category {
     margin-bottom: 20px;
     color: #a7a7a7;
     font-family: $font-2;
