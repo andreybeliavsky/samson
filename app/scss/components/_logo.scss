@@ -4,7 +4,8 @@
   font-family: $font-1;
   font-size: 32px;
   font-weight: $bold-weight;
-  line-height: 1;
+  letter-spacing: -3px;
+  line-height: 1.1;
   text-transform: uppercase;
 
   @include sm-block() {

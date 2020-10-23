@@ -4,6 +4,10 @@
 
   &__inner {
     padding: 40px 0;
+
+    @include md-block() {
+      padding-top: 47px;
+    }
   }
 
   &__list {
@@ -14,6 +18,11 @@
 
     @include sm-block() {
       margin: -15px;
+    }
+
+    @include md-block() {
+      margin: -20px;
+      //padding-bottom: 10px;
     }
   }
 
@@ -26,7 +35,9 @@
     }
 
     @include md-block() {
-      width: calc(25% - 30px);
+      width: calc(25% - 40px);
+      padding-right: 2px;
+      margin: 20px;
     }
 
     &:last-child {
@@ -47,10 +58,15 @@
   &__title {
     margin-bottom: 10px;
     color: #6b6b6b;
-    font-family: $font-2;
+    font-family: $font-1;
     font-size: 18px;
     font-weight: $bold-weight;
+    line-height: 1.2;
     text-transform: uppercase;
+
+    @include md-block() {
+      margin-bottom: 16px;
+    }
   }
 
   &__text {

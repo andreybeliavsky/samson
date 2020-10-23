@@ -1,5 +1,13 @@
 .works {
-  padding: 60px 0;
+
+  &__inner {
+    padding: 60px 0;
+
+    @include md-block() {
+      padding-top: 56px;
+      padding-bottom: 50px;
+    }
+  }
 
   &__title {
     margin-bottom: 10px;
@@ -8,21 +16,25 @@
     font-size: 18px;
     font-weight: $bold-weight;
     line-height: 1.2;
+
+    @include md-block() {
+      margin-bottom: 22px;
+    }
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-right: -7px;
+    margin-left: -7px;
   }
 
   &__list-item {
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 7px;
+    margin-left: 7px;
 
     @include sm-block() {
-      width: calc(33.333% - 30px);
+      width: calc(33.333% - 14px);
     }
   }
 }
@@ -33,6 +45,11 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 10px;
+
+    @include md-block() {
+      height: 270px;
+      margin-bottom: 22px;
+    }
   }
 
   &__image:hover &__image-overlay {
@@ -72,6 +89,7 @@
     font-family: $font-2;
     font-size: 18px;
     font-weight: $bold-weight;
+    line-height: 1.2;
     transition: color .3s;
 
     &:hover {
@@ -84,6 +102,11 @@
     color: #a7a7a7;
     font-family: $font-2;
     font-size: 13px;
+    line-height: 1.2;
+
+    @include md-block() {
+      margin-bottom: 16px;
+    }
   }
 
   &__text {

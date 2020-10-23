@@ -108,7 +108,7 @@
     }
 
     @include md-block() {
-      margin-right: 20px;
+      margin-right: 19px;
     }
 
     &:last-child {
@@ -122,7 +122,7 @@
     font-family: $font-1;
     font-size: 24px;
     font-weight: $bold-weight;
-    line-height: 35px;
+    line-height: 1.1;
     text-transform: uppercase;
     transition: color .3s;
 
